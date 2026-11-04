@@ -2,14 +2,6 @@ from pydantic import BaseModel
 from typing import Dict, List
 
 import json
-
-class ApartmentSettlement(BaseModel):
-    apartment_key: str
-    settlement_year: int
-    settlement_month: int
-    total_bills_pln: float
-    total_rent_pln: float
-    remaining_balance_pln: float
     
 class Parameters(BaseModel):
     apartments_json_path: str = 'data/apartments.json'
