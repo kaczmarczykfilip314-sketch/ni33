@@ -4,7 +4,7 @@ from typing import Dict, List
 import json
 
 class ApartmentSettlement(BaseModel):
-    apartment_key: str
+    apart_key: str
     settlement_year: int
     settlement_month: int
     total_bills_pln: float
